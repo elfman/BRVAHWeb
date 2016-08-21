@@ -1,0 +1,297 @@
+.content {
+  width: 1200px;
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: Microsoft YaHei, Times New Roman, "open-sans", sans-serif;
+  margin: 0;
+}
+header {
+  height: 86px;
+  background-color: #1b1b1b;
+}
+header .content {
+  height: 86px;
+  line-height: 86px;
+}
+header .content img {
+  display: block;
+  float: left;
+}
+header .content #logoIcon {
+  margin-top: 20px;
+}
+header .content #brvahText {
+  height: 24px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+header .content #githubLogo {
+  float: right;
+  margin-top: 25px;
+}
+header .content ul {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto 0 64px;
+}
+header .content ul li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 110px;
+  height: 100%;
+  color: #818181;
+}
+header .content ul li.active {
+  color: #ffffff;
+}
+.section-1 {
+  background: url(../pic/section1-bg.png) no-repeat center center;
+  width: 100%;
+  height: 510px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.section-1 .content {
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: lighter;
+  padding-top: 90px;
+}
+.section-1 .content p {
+  margin: 0;
+}
+.section-1 .content .title {
+  font-size: 30px;
+}
+.section-1 .content .part {
+  font-size: 20px;
+  margin: 40px 0;
+}
+.section-2 .top-layer {
+  background-color: #1ebf60;
+  height: 230px;
+  width: 100%;
+  position: absolute;
+  top: 596px;
+  z-index: -1;
+}
+.section-2 .content {
+  margin-top: 80px;
+}
+.section-2 .row {
+  height: 450px;
+}
+.section-2 .introduce {
+  background-color: #ffffff;
+  color: #343434;
+  width: 26%;
+  height: 420px;
+  padding: 30px 70px 0 30px;
+  float: left;
+  margin-right: 30px;
+  -moz-box-shadow: 1px 1px 1px #999;
+  -webkit-box-shadow: 1px 1px 1px #999;
+  box-shadow: 0 0 8px #999;
+}
+.section-2 .introduce .title div {
+  width: 120px;
+  display: inline-block;
+}
+.section-2 .introduce #introductionTitleCN {
+  color: #1ebf60;
+}
+.section-2 .introduce #introductionSubtitle {
+  color: #cdcdcd;
+}
+.section-2 .what-can-do {
+  background: url(../pic/section2-bg.png);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 450px;
+}
+.section-2 .what-can-do .title {
+  width: 40%;
+  float: left;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+.section-2 .what-can-do .title #whatCanDo {
+  color: #ffffff;
+}
+.section-2 .what-can-do .title #whatCanDo::first-letter {
+  color: #1ebf60;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.section-2 .what-can-do .title #subtitleWhatCanDo {
+  color: #aaa;
+}
+.section-2 .what-can-do .more {
+  float: right;
+  color: #1ebf60;
+  position: relative;
+  right: 30px;
+  top: 20px;
+}
+.section-2 .what-can-do .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-2 .what-can-do .functions {
+  clear: both;
+  margin-top: 120px;
+}
+.section-2 .what-can-do .functions .grid-row {
+  display: flex;
+}
+.section-2 .what-can-do .functions .cell {
+  background-color: rgba(142, 142, 142, 0.6);
+  height: 64px;
+  line-height: 64px;
+  border-radius: 30px;
+  width: 150px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  flex: 1;
+  margin: 10px 12px;
+}
+.section-2 .honor {
+  color: #ffffff;
+  height: 200px;
+  margin-top: 40px;
+}
+.section-2 .honor .honor-develop {
+  background-color: #27b3f3;
+}
+.section-2 .honor .honor-star {
+  background-color: #32d675;
+}
+.section-2 .honor .honor-member {
+  background-color: #fd9854;
+}
+.section-2 .honor > div img {
+  float: right;
+  position: relative;
+  right: 40px;
+  top: 40px;
+}
+.section-2 .honor > div div {
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.section-3 .section-title {
+  color: #000;
+}
+.section-3 .grid {
+  margin: 0 20px;
+  text-align: center;
+  height: 250px;
+}
+.section-3 .grid .title {
+  margin: 20px 0;
+}
+.section-3 .grid img {
+  margin: 20px 0;
+}
+.section-4 .section-title {
+  color: #111;
+}
+.section-4 #contentAbout {
+  background-image: url(../pic/section4-bg.png);
+  background-repeat: no-repeat;
+  height: 560px;
+}
+.section-4 .center {
+  margin: 0 auto;
+  color: #ffffff;
+  width: 580px;
+  padding-top: 130px;
+}
+.section-4 .center > div {
+  margin: 0 auto;
+  text-align: center;
+}
+.section-4 .center .circle {
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background-color: rgba(69, 137, 88, 0.7);
+  font-size: 30px;
+}
+.section-4 .center .text {
+  margin-top: 40px;
+}
+.section-5 .section-title {
+  color: #222;
+}
+.section-5 .text {
+  margin: 30px 0;
+}
+.section-5 .grid {
+  background-color: #ffffff;
+  -moz-box-shadow: 1px 1px 1px #999;
+  -webkit-box-shadow: 1px 1px 1px #999;
+  box-shadow: 0 0 8px #999;
+  height: 420px;
+  width: 30%;
+}
+.section-5 img {
+  width: 100%;
+}
+footer {
+  background-color: #343434;
+  height: 95px;
+  margin-top: 80px;
+}
+footer #footer {
+  line-height: 95px;
+  vertical-align: middle;
+}
+.section-title {
+  margin: 50px 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+.section-title::after {
+  content: " :::";
+}
+.row-three {
+  display: flex;
+}
+.row-three > div {
+  flex: 1;
+  height: 100%;
+}
+.row-three > div + div {
+  margin-left: 25px;
+}
+.md-button {
+  line-height: 40px;
+  height: 40px;
+  width: 120px;
+  color: #ffffff;
+  background-color: #1ebf60;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial;
+  border: 0px solid #1ebf60;
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+.md-button:hover {
+  background-color: #1c9439;
+}

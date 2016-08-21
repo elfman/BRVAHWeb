@@ -2,47 +2,172 @@
 <head>
     <meta http-equiv="content-type" content="text/html: charset=utf-8"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    <link type="text/css" href="index.css" rel="stylesheet">
+    <link type="text/css" href="css/index.css" rel="stylesheet">
     <title>BRAVH</title>
     <meta name="description" content="A useful adapter helper for Android app development"/>
-    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-    <script type="text/javascript" language="javascript" src="jquery.i18n.properties.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.i18n.properties.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo-header">
-            <img src="logo.png">
-            <p>BRVAH</p>
+        <div class="content">
+            <div class="header-logo">
+                <img src="./pic/logo.png" id="logoIcon">
+                <img src="./pic/brvah.png" id="brvahText">
+            </div>
+            <ul>
+                <li class="active" id="index"></li>
+                <li id="introduce"></li>
+                <li id="usage"></li>
+                <li id="member"></li>
+                <li id="about"></li>
+            </ul>
+            <img src="./pic/github.png" id="githubLogo"/>
         </div>
-        <ul>
-            <li id="str_index">首页</li>
-            <li id="str_introduce">项目介绍</li>
-            <li id="str_usage">使用方式</li>
-            <li id="str_member">成员介绍</li>
-            <li id="str_about">关于我们</li>
-        </ul>
     </header>
     <section class="section-1">
-        <img src="header-background.jpg">
+        <!-- <img src="./pic/section1-bg.png"> -->
         <div class="content">
-            <img src="logo.png">
-            <p id="str_section1-title"/>
-            <p id="str_section1-subtitle"/>
-            <p id="str_section1-url"/>
+            <div class="title">
+                <p id="section1_p0"/>
+                <p id="section1_p1"/>
+            </div>
+            <div class="part">
+                <p id="section1_p2"/>
+                <p id="section1_p3"/>
+            </div>
+            <div class="part">
+                <p id="section1_p4"/>
+                <p id="section1_p5"/>
+            </div>
         </div>
     </section>
+    <section class="section-2">
+        <div class="top-layer"></div>
+        <div class="content">
+            <div class="section-title" id="section2Title"></div>
+            <div class="row">
+                <div class="introduce">
+                    <div class="title">
+                        <div id="introductionTitle"></div>
+                        <div id="introductionTitleCN"/></div>
+                    </div>
+                    <p id="introductionSubtitle"></p>
+                    <div class="introduction-content">
+                        <p id="introduction_p1"></p>
+                        <p id="introduction_p2"></p>
+                    </div>
+                    <div class="md-button" id="buttonUsage"></div>
+                </div>
+                <div class="what-can-do">
+                    <div class="container">
+                        <div class="title">
+                            <p id="whatCanDo"></p>
+                            <p id="subtitleWhatCanDo"></p>
+                        </div>
+                        <div class="more" id="more"></div>
+                        <div class="functions">
+                            <div class="grid-row">
+                                <div class="cell" id="doGrid0"></div>
+                                <div class="cell" id="doGrid1"></div>
+                                <div class="cell" id="doGrid2"></div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="cell" id="doGrid3"></div>
+                                <div class="cell" id="doGrid4"></div>
+                                <div class="cell" id="doGrid5"></div>
+                            </div>
+                            <div class="grid-row">
+                                <div class="cell" id="doGrid6"></div>
+                                <div class="cell" id="doGrid7"></div>
+                                <div class="cell" id="doGrid8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="honor row-three">
+                <div class="honor-develop">
+                    <img src="./pic/development.png"/>
+                    <div id="devTime"></div>
+                    <div id="devIssue"></div>
+                </div>
+                <div class="honor-star">
+                    <img src="./pic/star.png"/>
+                    <div id="githubRate"></div>
+                    <div id="githubStars"></div>
+                </div>
+                <div class="honor-member">
+                    <img src="./pic/development.png"/>
+                    <div id="memberCount"></div>
+                    <div id="shareCount"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="content">
+            <div class="section-title" id="aboutTeam"></div>
+            <div class="row-three">
+                <div class="grid">
+                    <img src="./pic/share.png">
+                    <div class="title" id="titleShare"></div>
+                    <div class="text" id="textShare"></div>
+                </div>
+                <div class="grid">
+                    <img src="./pic/help.png">
+                    <div class="title" id="titleHelp"></div>
+                    <div class="text" id="textHelp"></div>
+                </div>
+                <div class="grid">
+                    <img src="./pic/quiz.png">
+                    <div class="title" id="titleQuiz"></div>
+                    <div class="text" id="textQuiz"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="content">
+            <div class="section-title" id="aboutBRVAH"></div>
+        </div>
+        <div id="contentAbout">
+            <div class="center">
+                <div class="circle">
+                    BRVAH
+                </div>
+                <div class="text" id="aboutBRVAHText1"></div>
+                <div class="text" id="aboutBRVAHText2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="content">
+            <div class="section-title" id="joinBRVAH"></div>
+            <div class="text" id="joinText1"></div>
+            <div class="text" id="joinText2"></div>
+            <div class="row-three">
+                <div class="grid">
+                    <img src="./pic/section5-1.png" alt="" />
+                    <div class="text" id="section5_1_1"></div>
+                    <div class="text" id="section5_1_2"></div>
+                </div>
+                <div class="grid">
+                    <img src="./pic/section5-2.png" alt="" />
+                    <div class="text" id="section5_2"></div>
+                </div>
+                <div class="grid">
+                    <img src="./pic/section5-3.png" alt="" />
+                    <div class="text" id="section5_3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="content" id="footer">
+
+        </div>
+    </footer>
 </body>
-<script type="text/javascript">
-    $.i18n.properties({
-        name: 'strings',
-        path: 'i18n/',
-        mode: 'map',
-        language: 'zh',
-        callback: function() {
-            for (var key in $.i18n.map) {
-                $('#' + key).text($.i18n.prop(key));
-            }
-        }
-    });
-</script>
 </html>
