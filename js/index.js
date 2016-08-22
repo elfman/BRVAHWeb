@@ -10,4 +10,12 @@ $(document).ready(function() {
       }
     }
   });
+
+  function addMask(item) {
+    var width = item.width();
+    var height = item.height();
+    $('<div class="mask"></div>').width(width).height(height).prependTo(item);
+  }
+  addMask($('.what-can-do'));
+  addMask($('#contentAbout'));
 });

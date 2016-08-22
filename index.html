@@ -2,14 +2,23 @@
 <head>
     <meta http-equiv="content-type" content="text/html: charset=utf-8"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    <link type="text/css" href="css/index.css" rel="stylesheet">
+    <link type="text/css" href="css/index.css" rel="stylesheet"/>
     <title>BRAVH</title>
     <meta name="description" content="A useful adapter helper for Android app development"/>
     <script src="./js/jquery.min.js"></script>
     <script type="text/javascript" language="javascript" src="js/jquery.i18n.properties.min.js"></script>
     <script src="js/index.js"></script>
 </head>
+
 <body>
+    <!--[if lt IE 10]>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('body').empty();
+            alert('IE 10- is not supported, please upgrade or change your browser.');
+        })
+    </script>
+    <![endif]-->
     <header>
         <div class="content">
             <div class="header-logo">
@@ -61,28 +70,26 @@
                     <div class="md-button" id="buttonUsage"></div>
                 </div>
                 <div class="what-can-do">
-                    <div class="container">
-                        <div class="title">
-                            <p id="whatCanDo"></p>
-                            <p id="subtitleWhatCanDo"></p>
+                    <div class="title">
+                        <p id="whatCanDo"></p>
+                        <p id="subtitleWhatCanDo"></p>
+                    </div>
+                    <a class="more" id="more" href="#aboutTeam"></a>
+                    <div class="functions">
+                        <div class="grid-row">
+                            <div class="cell" id="doGrid0"></div>
+                            <div class="cell" id="doGrid1"></div>
+                            <div class="cell" id="doGrid2"></div>
                         </div>
-                        <div class="more" id="more"></div>
-                        <div class="functions">
-                            <div class="grid-row">
-                                <div class="cell" id="doGrid0"></div>
-                                <div class="cell" id="doGrid1"></div>
-                                <div class="cell" id="doGrid2"></div>
-                            </div>
-                            <div class="grid-row">
-                                <div class="cell" id="doGrid3"></div>
-                                <div class="cell" id="doGrid4"></div>
-                                <div class="cell" id="doGrid5"></div>
-                            </div>
-                            <div class="grid-row">
-                                <div class="cell" id="doGrid6"></div>
-                                <div class="cell" id="doGrid7"></div>
-                                <div class="cell" id="doGrid8"></div>
-                            </div>
+                        <div class="grid-row">
+                            <div class="cell" id="doGrid3"></div>
+                            <div class="cell" id="doGrid4"></div>
+                            <div class="cell" id="doGrid5"></div>
+                        </div>
+                        <div class="grid-row">
+                            <div class="cell" id="doGrid6"></div>
+                            <div class="cell" id="doGrid7"></div>
+                            <div class="cell" id="doGrid8"></div>
                         </div>
                     </div>
                 </div>
@@ -165,9 +172,7 @@
         </div>
     </section>
     <footer>
-        <div class="content" id="footer">
-
-        </div>
+        <div class="content" id="footer"></div>
     </footer>
 </body>
 </html>
