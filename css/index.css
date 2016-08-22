@@ -107,10 +107,8 @@ header .content ul li.active {
   width: 26%;
   height: 420px;
   padding: 30px 70px 0 30px;
-  float: left;
   margin-right: 30px;
-  -moz-box-shadow: 1px 1px 1px #999;
-  -webkit-box-shadow: 1px 1px 1px #999;
+  flex: 3;
   box-shadow: 0 0 8px #999;
 }
 .section-2 .introduce p {
@@ -133,7 +131,7 @@ header .content ul li.active {
   -o-background-size: cover;
   background-size: cover;
   height: 450px;
-  flex: 1;
+  flex: 8;
   color: #ffffff;
 }
 .section-2 .what-can-do .title {
@@ -254,6 +252,7 @@ header .content ul li.active {
 }
 .section-4 .center .text {
   margin-top: 40px;
+  font-size: 26px;
 }
 .section-5 .section-title {
   color: #222;
@@ -263,11 +262,12 @@ header .content ul li.active {
 }
 .section-5 .grid {
   background-color: #ffffff;
-  -moz-box-shadow: 1px 1px 1px #999;
-  -webkit-box-shadow: 1px 1px 1px #999;
-  box-shadow: 0 0 8px #999;
+  box-shadow: 0 0 3px #999;
   height: 420px;
   width: 30%;
+}
+.section-5 .grid:hover {
+  box-shadow: 0 0 8px #999;
 }
 .section-5 img {
   width: 100%;
@@ -316,8 +316,6 @@ footer #footer {
   font-weight: normal;
   font-family: Arial;
   border: 0px solid #1ebf60;
-  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
-  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
   box-shadow: inset 0px 0px 0px 0px #ffffff;
   text-align: center;
   display: inline-block;
