@@ -96,6 +96,10 @@ header .content ul li.active {
 .section-2 .section-title {
   margin: 0;
   padding: 50px 0;
+  color: #ffffff;
+}
+.section-2 .section-title:after {
+  background: url(../pic/dot-white.png);
 }
 .section-2 .row {
   height: 450px;
@@ -210,9 +214,6 @@ header .content ul li.active {
   width: 65%;
   margin-top: 30px;
 }
-.section-3 .section-title {
-  color: #000;
-}
 .section-3 .row-three {
   height: 250px;
 }
@@ -226,9 +227,6 @@ header .content ul li.active {
 }
 .section-3 .grid img {
   margin: 20px 0;
-}
-.section-4 .section-title {
-  color: #111;
 }
 .section-4 #contentAbout {
   background-image: url(../pic/section4-bg.png);
@@ -258,9 +256,6 @@ header .content ul li.active {
 .section-4 .center .text {
   margin-top: 40px;
   font-size: 26px;
-}
-.section-5 .section-title {
-  color: #222;
 }
 .section-5 .text {
   margin: 30px 10px 0;
@@ -298,11 +293,18 @@ footer #footer {
 }
 .section-title {
   margin: 50px 0;
-  color: #ffffff;
+  color: #000;
   font-size: 34px;
 }
-.section-title::after {
-  content: " :::";
+.section-title:after {
+  content: "";
+  background: url("../pic/dot-black.png");
+  display: inline-block;
+  width: 26px;
+  height: 15px;
+  position: relative;
+  top: -4px;
+  left: 12px;
 }
 .row-three {
   position: relative;

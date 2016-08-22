@@ -135,6 +135,10 @@ header {
     .section-title {
         margin: 0;
         padding: 50px 0;
+        color: @white;
+        &:after {
+            background: url(../pic/dot-white.png);
+        }
     }
     .row {
         height: @introduceHeight;
@@ -250,9 +254,6 @@ header {
     }
 }
 .section-3 {
-    .section-title {
-        color: #000;
-    }
     .row-three {
         height: 250px;
     }
@@ -269,9 +270,6 @@ header {
     }
 }
 .section-4 {
-    .section-title {
-        color: #111;
-    }
     #contentAbout {
         background-image: url(../pic/section4-bg.png);
         background-repeat: no-repeat;
@@ -303,9 +301,6 @@ header {
     }
 }
 .section-5 {
-    .section-title {
-        color: #222;
-    }
     .text {
         margin: 30px 10px 0;
     }
@@ -343,10 +338,17 @@ footer {
 }
 .section-title {
     margin: 50px 0;
-    color: @white;
+    color: #000;
     font-size: 34px;
-    &::after {
-        content: " :::";
+    &:after {
+        content: "";
+        background: url("../pic/dot-black.png");
+        display: inline-block;
+        width: 26px;
+        height: 15px;
+        position: relative;
+        top: -4px;
+        left: 12px;
     }
 }
 .row-three {
