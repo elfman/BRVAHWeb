@@ -138,17 +138,17 @@ header {
     }
     .row {
         height: @introduceHeight;
-        display: flex;
+        position: relative;
     }
     .introduce {
         background-color: @white;
         color: @gray;
-        width: 26%;
+        width: 25%;
         height: @introduceHeight - @introducePaddingTop;
         padding: @introducePaddingTop 70px 0 30px;
         margin-right: 30px;
-        flex: 3;
         box-shadow: 0 0 8px #999;
+        position: absolute;
         p {
             margin: 20px 0;
         }
@@ -167,8 +167,10 @@ header {
         background: url(../pic/section2-bg.png)  no-repeat center center;
         .backgroud-size(cover);
         height: @introduceHeight;
-        flex: 8;
         color: @white;
+        position: absolute;
+        width: 64%;
+        right: 0;
         .title {
             width: 40%;
             float: left;
@@ -251,6 +253,9 @@ header {
     .section-title {
         color: #000;
     }
+    .row-three {
+        height: 250px;
+    }
     .grid {
         margin: 0 20px;
         text-align: center;
@@ -302,7 +307,10 @@ header {
         color: #222;
     }
     .text {
-        margin: 30px 0;
+        margin: 30px 10px 0;
+    }
+    .row-three {
+        height: 420px;
     }
     .grid {
         background-color: @white;
@@ -342,12 +350,19 @@ footer {
     }
 }
 .row-three {
-    display: flex;
+    position: relative;
     & > div {
-        flex: 1;
+        position: absolute;
+        width: 30%;
         height: 100%;
-        & + div {
-            margin-left: 40px;
+        &:first-child {
+            left: 0;
+        }
+        &:last-child {
+            right: 0;
+        }
+        &:nth-child(2) {
+            left: 35%;
         }
     }
 }
