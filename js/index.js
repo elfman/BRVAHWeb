@@ -32,19 +32,16 @@ $(document).ready(function() {
   $('#changeLanguage').click(function() {
     var list = $('#languageList');
     if (list.is(':visible')) {
-      list.hide();
+      list.slideUp();
       $('#changeLanguage .triangle').removeClass('reverse');
     } else {
-      list.show();
+      list.slideDown();
       $('#changeLanguage .triangle').addClass('reverse');
     }
   });
 
   addMask($('.what-can-do'));
   addMask($('#contentAbout'));
-  // addMask($('#joinGrid1'));
-  // addMask($('#joinGrid2'));
-  // addMask($('#joinGrid3'));
 });
 
 function addMask(item) {
