@@ -14,7 +14,7 @@ p {
   margin: 0;
 }
 a {
-  color: #000;
+  color: #000000;
 }
 .no-ie {
   background-color: #ffffff;
@@ -27,6 +27,7 @@ a {
 header {
   height: 86px;
   background-color: #1b1b1b;
+  color: #ffffff;
 }
 header .content {
   height: 86px;
@@ -48,12 +49,33 @@ header .content #githubLogo {
   float: right;
   margin-top: 25px;
 }
-header .content ul {
+header .content #changeLanguage {
+  float: right;
+  margin-right: 10px;
+  width: 140px;
+  height: 86px;
+  line-height: 86px;
+  cursor: pointer;
+}
+header .content #changeLanguage .triangle {
+  position: relative;
+  top: 16px;
+  left: 8px;
+}
+header .content #changeLanguage .triangle.reverse {
+  top: -12px;
+}
+header .content #changeLanguage span {
+  margin-left: 15px;
+  font-size: 15px;
+}
+header .content ul.tab {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 auto 0 64px;
+  margin: -4px auto 0 64px;
+  height: 86px;
 }
-header .content ul li {
+header .content ul.tab li {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -61,7 +83,7 @@ header .content ul li {
   height: 100%;
   color: #818181;
 }
-header .content ul li.active {
+header .content ul.tab li.active {
   color: #ffffff;
 }
 .section-1 {
@@ -80,10 +102,14 @@ header .content ul li.active {
   padding-top: 90px;
 }
 .section-1 .content .title {
-  font-size: 30px;
+  font-size: 24px;
+}
+.section-1 .content .subtitle {
+  font-size: 18px;
+  margin-top: 30px;
 }
 .section-1 .content .part {
-  font-size: 20px;
+  font-size: 16px;
   margin: 40px 0;
 }
 .section-2 .top-layer {
@@ -112,7 +138,7 @@ header .content ul li.active {
   height: 420px;
   padding: 30px 70px 0 30px;
   margin-right: 30px;
-  box-shadow: 0 0 8px #999;
+  box-shadow: 0 0 8px #ddd;
   position: absolute;
 }
 .section-2 .introduce p {
@@ -122,11 +148,17 @@ header .content ul li.active {
   width: 120px;
   display: inline-block;
 }
+.section-2 .introduce #introductionTitle {
+  color: #777;
+}
 .section-2 .introduce #introductionTitleCN {
   color: #1ebf60;
 }
 .section-2 .introduce #introductionSubtitle {
   color: #cdcdcd;
+}
+.section-2 .introduce #buttonUsage {
+  margin-top: 40px;
 }
 .section-2 .what-can-do {
   background: url(../pic/section2-bg.png) no-repeat center center;
@@ -217,21 +249,20 @@ header .content ul li.active {
 }
 .section-2 .honor > div div:nth-child(2) {
   width: 65%;
-  margin-top: 30px;
+  margin-top: 36px;
 }
 .section-3 .row-three {
-  height: 250px;
+  height: 220px;
 }
 .section-3 .grid {
-  margin: 0 20px;
   text-align: center;
-  height: 250px;
+  height: 220px;
 }
 .section-3 .grid .title {
   margin: 20px 0;
 }
-.section-3 .grid img {
-  margin: 20px 0;
+.section-3 .grid a {
+  font-weight: bold;
 }
 .section-4 #contentAbout {
   background-image: url(../pic/section4-bg.png);
@@ -260,22 +291,51 @@ header .content ul li.active {
 }
 .section-4 .center .text {
   margin-top: 40px;
-  font-size: 26px;
+  font-size: 16px;
 }
 .section-5 .text {
-  margin: 30px 10px 30px;
+  margin: 20px 0px;
+  font-size: 16px;
+}
+.section-5 #joinText4 {
+  margin: 36px 0;
+  color: #333;
 }
 .section-5 .row-three {
-  height: 420px;
+  height: 442px;
 }
 .section-5 .grid {
-  background-color: #ffffff;
+  background: url(../pic/section5-1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   box-shadow: 0 0 3px #999;
-  height: 420px;
+  height: 442px;
   width: 30%;
+  text-align: center;
+  color: #ffffff;
+}
+.section-5 .grid img {
+  width: 92px;
+  height: 98px;
+  margin-top: 60px;
+}
+.section-5 .grid .text {
+  line-height: 1.6;
+  margin-top: 48px;
 }
 .section-5 .grid:hover {
   box-shadow: 0 0 8px #999;
+}
+.section-5 #joinGrid1 {
+  background-image: url('../pic/section5-1.png');
+}
+.section-5 #joinGrid2 {
+  background-image: url('../pic/section5-2.png');
+}
+.section-5 #joinGrid3 {
+  background-image: url('../pic/section5-3.png');
 }
 .section-5 img {
   width: 100%;
@@ -283,7 +343,6 @@ header .content ul li.active {
 footer {
   background-color: #343434;
   height: 95px;
-  margin-top: 80px;
 }
 footer #footer {
   line-height: 95px;
@@ -293,12 +352,12 @@ footer #footer {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #000;
-  opacity: 0.3;
+  background-color: #000000;
+  opacity: 0.6;
 }
 .section-title {
   margin: 50px 0;
-  color: #000;
+  color: #444;
   font-size: 34px;
 }
 .section-title:after {
@@ -316,7 +375,7 @@ footer #footer {
 }
 .row-three > div {
   position: absolute;
-  width: 30%;
+  width: 32%;
   height: 100%;
 }
 .row-three > div:first-child {
@@ -326,7 +385,50 @@ footer #footer {
   right: 0;
 }
 .row-three > div:nth-child(2) {
-  left: 35%;
+  left: 34%;
+}
+.downlist {
+  margin: 0;
+  padding-left: 0;
+  line-height: 1;
+  font-size: 15px;
+  display: none;
+}
+.downlist > li,
+.downlist > div {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background-color: #000000;
+  color: #ffffff;
+  float: left;
+  text-align: left;
+  vertical-align: middle;
+  cursor: pointer;
+  list-style-type: none;
+  opacity: 0.6;
+}
+.downlist > li.active a,
+.downlist > div.active a {
+  color: #1ebf60;
+}
+.downlist > li a,
+.downlist > div a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 8px solid #ffffff;
+  border-bottom: 0;
+}
+.triangle.reverse {
+  border-top: 0;
+  border-bottom: 8px solid #ffffff;
 }
 .md-button {
   line-height: 40px;

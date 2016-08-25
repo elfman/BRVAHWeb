@@ -15,6 +15,7 @@
 @green: rgb(30, 191, 96);
 @gray: rgb(52, 52, 52);
 @white: #ffffff;
+@black: #000000;
 @primaryColor: @green;
 @primaryFontColor: @gray;
 
@@ -52,7 +53,7 @@ p {
     margin: 0;
 }
 a {
-    color: #000;
+    color: @black;
 }
 
 .no-ie {
@@ -67,6 +68,7 @@ a {
 header {
     height: @headerHeight;
     background-color: rgb(27, 27, 27);
+    color: @white;
     .content {
         height: @headerHeight;
         line-height: @headerHeight;
@@ -86,11 +88,31 @@ header {
             float: right;
             margin-top: 25px;
         }
-
-        ul {
+        #changeLanguage {
+            float: right;
+            margin-right: 10px;
+            width: 140px;
+            height: @headerHeight;
+            line-height: @headerHeight;
+            cursor: pointer;
+            .triangle {
+                position: relative;
+                top: 16px;
+                left: 8px;
+                &.reverse {
+                    top: -12px;
+                }
+            }
+            span {
+                margin-left: 15px;
+                font-size: 15px;
+            }
+        }
+        ul.tab {
             display: inline-block;
             vertical-align: middle;
-            margin: 0 auto 0 64px;
+            margin: -4px auto 0 64px;
+            height: @headerHeight;
             li {
                 display: inline-block;
                 vertical-align: middle;
@@ -116,10 +138,14 @@ header {
         font-weight: lighter;
         padding-top: 90px;
         .title {
-            font-size: 30px;
+            font-size: 24px;
+        }
+        .subtitle {
+            font-size: 18px;
+            margin-top: 30px;
         }
         .part {
-            font-size: 20px;
+            font-size: 16px;
             margin: 40px 0;
         }
     }
@@ -151,7 +177,7 @@ header {
         height: @introduceHeight - @introducePaddingTop;
         padding: @introducePaddingTop 70px 0 30px;
         margin-right: 30px;
-        box-shadow: 0 0 8px #999;
+        box-shadow: 0 0 8px #ddd;
         position: absolute;
         p {
             margin: 20px 0;
@@ -160,11 +186,17 @@ header {
             width: 120px;
             display: inline-block;
         }
+        #introductionTitle {
+            color: #777;
+        }
         #introductionTitleCN {
             color: @green;
         }
         #introductionSubtitle {
             color: lighten(@gray, 60%);
+        }
+        #buttonUsage {
+            margin-top: 40px;
         }
     }
     .what-can-do {
@@ -252,7 +284,7 @@ header {
                 margin-left: 30px;
                 &:nth-child(2) {
                     width: 65%;
-                    margin-top: 30px;
+                    margin-top: 36px;
                 }
             }
         }
@@ -260,17 +292,16 @@ header {
 }
 .section-3 {
     .row-three {
-        height: 250px;
+        height: 220px;
     }
     .grid {
-        margin: 0 20px;
         text-align: center;
-        height: 250px;
+        height: 220px;
         .title {
             margin: 20px 0;
         }
-        img {
-            margin: 20px 0;
+        a {
+            font-weight: bold;
         }
     }
 }
@@ -301,25 +332,52 @@ header {
         }
         .text {
             margin-top: 40px;
-            font-size: 26px;
+            font-size: 16px;
         }
     }
 }
 .section-5 {
     .text {
-        margin: 30px 10px 30px;
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+    #joinText4 {
+        margin: 36px 0;
+        color: #333;
     }
     .row-three {
-        height: 420px;
+        height: 442px;
     }
     .grid {
-        background-color: @white;
+        background: url(../pic/section5-1.png) no-repeat center center;
+        .backgroud-size(cover);
         box-shadow: 0 0 3px #999;
-        height: 420px;
+        height: 442px;
         width: 30%;
+        text-align: center;
+        color: @white;
+        img {
+            width: 92px;
+            height: 98px;
+            margin-top: 60px;
+        }
+        .text {
+            line-height: 1.6;
+            margin-top: 48px;
+        }
         &:hover {
             box-shadow: 0 0 8px #999;
         }
+
+    }
+    #joinGrid1 {
+        background-image: url('../pic/section5-1.png');
+    }
+    #joinGrid2 {
+        background-image: url('../pic/section5-2.png');
+    }
+    #joinGrid3 {
+        background-image: url('../pic/section5-3.png');
     }
     img {
         width: 100%;
@@ -328,7 +386,6 @@ header {
 footer {
     background-color: rgb(52, 52, 52);
     height: 95px;
-    margin-top: 80px;
     #footer {
         line-height: 95px;
         vertical-align: middle;
@@ -338,12 +395,12 @@ footer {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #000;
-    opacity: 0.3;
+    background-color: @black;
+    opacity: 0.6;
 }
 .section-title {
     margin: 50px 0;
-    color: #000;
+    color: #444;
     font-size: 34px;
     &:after {
         content: "";
@@ -360,7 +417,7 @@ footer {
     position: relative;
     & > div {
         position: absolute;
-        width: 30%;
+        width: 32%;
         height: 100%;
         &:first-child {
             left: 0;
@@ -369,8 +426,52 @@ footer {
             right: 0;
         }
         &:nth-child(2) {
-            left: 35%;
+            left: 34%;
         }
+    }
+}
+.downlist {
+    margin: 0;
+    padding-left: 0;
+    line-height: 1;
+    font-size: 15px;
+    display: none;
+    &>li, &>div {
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+        background-color: @black;
+        color: @white;
+        float: left;
+        text-align: left;
+        vertical-align: middle;
+        cursor: pointer;
+        list-style-type: none;
+        opacity: 0.6;
+
+        &.active {
+            a {
+                color: @green;
+            }
+        }
+        a {
+            color: @white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+    }
+
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid @white;
+    border-bottom: 0;
+    &.reverse {
+        border-top: 0;
+        border-bottom: 8px solid @white;
     }
 }
 .md-button{
