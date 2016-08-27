@@ -6,24 +6,26 @@ var availableLanguage = [
 $(document).ready(function() {
 
   var lang = getCookie('language');
-  if (lang == null) {
+  if (lang === null) {
     lang = detectLanguage();
   }
 
   changeText(lang);
 
+  var handleclick = function() {
+    var index = $('#languageList').children().index(this);
+    var item = availableLanguage[index];
+    changeLanguage(index);
+    $('#currentLang').text(item[1]);
+
+    $('#languageList').children('li').removeClass('active');
+    $(this).addClass('active');
+};
+
   for (var i = 0; i < availableLanguage.length; i++) {
     var it = availableLanguage[i];
     var dom = $('<li><a href="#">' + it[1] + '</a></li>');
-    dom.click(function() {
-      var index = $('#languageList').children().index(this);
-      var item = availableLanguage[index];
-      changeLanguage(index);
-      $('#currentLang').text(item[1]);
-
-      $('#languageList').children('li').removeClass('active');
-      $(this).addClass('active');
-    }).appendTo('#languageList');
+    dom.click(handleclick).appendTo('#languageList');
     if (lang == it[0]) {
       dom.addClass('active');
       $('#currentLang').text(it[1]);

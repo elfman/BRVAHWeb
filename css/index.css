@@ -6,7 +6,7 @@
   margin-right: auto;
 }
 body {
-  font-family: 'Microsoft Yahei', sans-serif;
+  font-family: "Source-Han-Ligh56f0128db16029", 'Microsoft Yahei', sans-serif;
   margin: 0;
   width: 100%;
 }
@@ -58,12 +58,9 @@ header .content #changeLanguage {
   cursor: pointer;
 }
 header .content #changeLanguage .triangle {
+  display: inline-block;
   position: relative;
-  top: 16px;
   left: 8px;
-}
-header .content #changeLanguage .triangle.reverse {
-  top: -12px;
 }
 header .content #changeLanguage span {
   margin-left: 15px;
@@ -99,20 +96,23 @@ header .content ul.tab li.active {
 }
 .section-1 .content {
   margin: 0 auto;
-  color: #eeeeee;
+  color: #aaa;
   font-weight: lighter;
   padding-top: 90px;
 }
+.section-1 .content span {
+  color: #fff;
+}
 .section-1 .content .title {
-  font-size: 24px;
+  font-size: 32px;
 }
 .section-1 .content .subtitle {
-  font-size: 18px;
-  margin-top: 30px;
+  font-size: 24px;
+  margin-top: 24px;
 }
 .section-1 .content .part {
   font-size: 16px;
-  margin: 40px 0;
+  margin: 32px 0;
 }
 .section-2 .top-layer {
   background-color: #1ebf60;
@@ -135,7 +135,7 @@ header .content ul.tab li.active {
 }
 .section-2 .introduce {
   background-color: #ffffff;
-  color: #343434;
+  color: #222;
   width: 25%;
   height: 420px;
   padding: 30px 70px 0 30px;
@@ -151,10 +151,11 @@ header .content ul.tab li.active {
   display: inline-block;
 }
 .section-2 .introduce #introductionTitle {
-  color: #777;
+  color: #666;
 }
 .section-2 .introduce #introductionTitleCN {
   color: #1ebf60;
+  font-weight: bold;
 }
 .section-2 .introduce #introductionSubtitle {
   color: #cdcdcd;
@@ -193,6 +194,7 @@ header .content ul.tab li.active {
   color: #1ebf60;
   font-size: 24px;
   margin-right: 5px;
+  font-weight: bold;
 }
 .section-2 .what-can-do .title #subtitleWhatCanDo {
   color: #aaa;
@@ -299,7 +301,7 @@ header .content ul.tab li.active {
 .section-5 .text {
   margin: 20px 0px;
   font-size: 16px;
-  color: #444;
+  color: #000;
 }
 .section-5 #joinText4 {
   margin: 36px 0;
@@ -329,7 +331,7 @@ header .content ul.tab li.active {
   color: #eee;
 }
 .section-5 .grid:hover {
-  box-shadow: 0 0 8px #999;
+  box-shadow: 0 0 8px #000;
 }
 .section-5 #joinGrid1 {
   background-image: url('../pic/section5-1.png');
@@ -360,7 +362,7 @@ footer #footer {
 }
 .section-title {
   margin: 50px 0;
-  color: #444;
+  color: #111;
   font-size: 34px;
 }
 .section-title:after {
@@ -391,7 +393,7 @@ footer #footer {
   left: 34%;
 }
 .downlist {
-  margin: 0;
+  margin: -1px 0 0 0;
   padding-left: 0;
   line-height: 1;
   font-size: 15px;
