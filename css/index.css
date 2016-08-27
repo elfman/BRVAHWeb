@@ -105,6 +105,7 @@ header .content ul.tab li.active {
 }
 .section-1 .content .title {
   font-size: 32px;
+  color: #ffffff;
 }
 .section-1 .content .subtitle {
   font-size: 24px;
@@ -241,6 +242,9 @@ header .content ul.tab li.active {
 .section-2 .honor .honor-member {
   background-color: #fd9854;
 }
+.section-2 .honor > div {
+  box-shadow: 0 0 4px #111;
+}
 .section-2 .honor > div img {
   float: right;
   position: relative;
@@ -296,11 +300,14 @@ header .content ul.tab li.active {
 .section-4 .center .text {
   margin-top: 40px;
   font-size: 16px;
-  color: #ccc;
+  color: #cfcfcf;
 }
 .section-5 .text {
   margin: 20px 0px;
   font-size: 16px;
+  color: #666;
+}
+.section-5 .text strong {
   color: #000;
 }
 .section-5 #joinText4 {
