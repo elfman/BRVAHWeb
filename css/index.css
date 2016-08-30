@@ -15,6 +15,7 @@ p {
 }
 a {
   color: #000000;
+  text-decoration: none;
 }
 .no-ie {
   background-color: #ffffff;
@@ -32,6 +33,11 @@ header {
 header .content {
   height: 86px;
   line-height: 86px;
+}
+header .content .header-logo {
+  cursor: pointer;
+  height: 86px;
+  float: left;
 }
 header .content img {
   display: block;
@@ -80,9 +86,11 @@ header .content ul.tab li {
   text-align: center;
   width: 110px;
   height: 100%;
+}
+header .content ul.tab li a {
   color: #818181;
 }
-header .content ul.tab li.active {
+header .content ul.tab li.active a {
   color: #ffffff;
 }
 .section-1 {
@@ -207,6 +215,7 @@ header .content ul.tab li.active {
   right: 25px;
   top: 40px;
   font-size: 20px;
+  text-decoration: underline;
 }
 .section-2 .what-can-do .functions {
   clear: both;
@@ -227,9 +236,12 @@ header .content ul.tab li.active {
   flex: 1;
   margin: 10px 2%;
   z-index: 2;
+  cursor: pointer;
+}
+.section-2 .what-can-do .functions .cell:hover {
+  background-color: rgba(190, 190, 190, 0.8);
 }
 .section-2 .honor {
-  color: #ffffff;
   height: 200px;
   margin-top: 40px;
 }
@@ -242,35 +254,24 @@ header .content ul.tab li.active {
 .section-2 .honor .honor-member {
   background-color: #fd9854;
 }
-.section-2 .honor > div {
-  box-shadow: 0 0 4px #111;
+.section-2 .honor > a {
+  color: #ffffff;
+  box-shadow: 0 0 6px #999;
+  display: block;
 }
-.section-2 .honor > div img {
+.section-2 .honor > a img {
   float: right;
   position: relative;
   right: 25px;
   top: 36px;
 }
-.section-2 .honor > div div {
+.section-2 .honor > a div {
   margin-top: 70px;
   margin-left: 30px;
 }
-.section-2 .honor > div div:nth-child(2) {
+.section-2 .honor > a div:nth-child(2) {
   width: 65%;
   margin-top: 36px;
-}
-.section-3 .row-three {
-  height: 220px;
-}
-.section-3 .grid {
-  text-align: center;
-  height: 220px;
-}
-.section-3 .grid .title {
-  margin: 20px 0;
-}
-.section-3 .grid a {
-  font-weight: bold;
 }
 .section-4 #contentAbout {
   background-image: url(../pic/section4-bg.png);
@@ -385,18 +386,23 @@ footer #footer {
 .row-three {
   position: relative;
 }
-.row-three > div {
+.row-three > div,
+.row-three > a {
   position: absolute;
+  display: block;
   width: 32%;
   height: 100%;
 }
-.row-three > div:first-child {
+.row-three > div:first-child,
+.row-three > a:first-child {
   left: 0;
 }
-.row-three > div:last-child {
+.row-three > div:last-child,
+.row-three > a:last-child {
   right: 0;
 }
-.row-three > div:nth-child(2) {
+.row-three > div:nth-child(2),
+.row-three > a:nth-child(2) {
   left: 34%;
 }
 .downlist {
@@ -427,7 +433,6 @@ footer #footer {
 .downlist > li a,
 .downlist > div a {
   color: #ffffff;
-  text-decoration: none;
   margin-left: 15px;
 }
 .triangle {
@@ -456,6 +461,7 @@ footer #footer {
   text-align: center;
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 .md-button:hover {
   background-color: #1c9439;

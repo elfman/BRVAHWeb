@@ -50,6 +50,7 @@ p {
 }
 a {
     color: @black;
+    text-decoration: none;
 }
 
 .no-ie {
@@ -68,6 +69,11 @@ header {
     .content {
         height: @headerHeight;
         line-height: @headerHeight;
+        .header-logo {
+            cursor: pointer;
+            height: @headerHeight;
+            float: left;
+        }
         img {
             display: block;
             float: left;
@@ -114,8 +120,10 @@ header {
                 text-align: center;
                 width: 110px;
                 height: 100%;
-                color: lighten(@gray, 30%);
-                &.active {
+                a {
+                    color: lighten(@gray, 30%);
+                }
+                &.active a{
                     color: @white;
                 }
             }
@@ -238,6 +246,7 @@ header {
             right: 25px;
             top: 40px;
             font-size: 20px;
+            text-decoration: underline;
         }
         .functions {
             clear: both;
@@ -257,11 +266,14 @@ header {
                 flex: 1;
                 margin: 10px 2%;
                 z-index: 2;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgba(190, 190, 190, 0.8);
+                }
             }
         }
     }
     .honor {
-        color: @white;
         height: 200px;
         margin-top: 40px;
         .honor-develop {
@@ -273,8 +285,10 @@ header {
         .honor-member {
             background-color: rgb(253, 152, 84);
         }
-        & > div {
-            box-shadow: 0 0 4px #111;
+        & > a {
+            color: @white;
+            box-shadow: 0 0 6px #999;
+            display: block;
             img {
                 float: right;
                 position: relative;
@@ -292,21 +306,7 @@ header {
         }
     }
 }
-.section-3 {
-    .row-three {
-        height: 220px;
-    }
-    .grid {
-        text-align: center;
-        height: 220px;
-        .title {
-            margin: 20px 0;
-        }
-        a {
-            font-weight: bold;
-        }
-    }
-}
+
 .section-4 {
     #contentAbout {
         background-image: url(../pic/section4-bg.png);
@@ -421,8 +421,9 @@ footer {
 }
 .row-three {
     position: relative;
-    & > div {
+    & > div, & > a {
         position: absolute;
+        display: block;
         width: 32%;
         height: 100%;
         &:first-child {
@@ -462,7 +463,6 @@ footer {
         }
         a {
             color: @white;
-            text-decoration: none;
             margin-left: 15px;
         }
     }
@@ -494,6 +494,7 @@ footer {
   text-align:center;
   display:inline-block;
   text-decoration:none;
+  cursor: pointer;
 }
 .md-button:hover{
   background-color:#1c9439;
