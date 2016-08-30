@@ -169,9 +169,6 @@ header .content ul.tab li.active a {
 .section-2 .introduce #introductionSubtitle {
   color: #cdcdcd;
 }
-.section-2 .introduce #buttonUsage {
-  margin-top: 40px;
-}
 .section-2 .what-can-do {
   background: url(../pic/section2-bg.png) no-repeat center center;
   -webkit-background-size: cover;
@@ -333,10 +330,14 @@ header .content ul.tab li.active a {
   height: 98px;
   margin-top: 60px;
 }
-.section-5 .grid .text {
+.section-5 .grid .text,
+.section-5 .grid a {
   line-height: 1.6;
   margin-top: 48px;
   color: #eee;
+}
+.section-5 .grid a {
+  text-decoration: underline;
 }
 .section-5 .grid:hover {
   box-shadow: 0 0 8px #000;

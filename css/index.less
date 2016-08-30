@@ -203,9 +203,6 @@ header {
         #introductionSubtitle {
             color: lighten(@gray, 60%);
         }
-        #buttonUsage {
-            margin-top: 40px;
-        }
     }
     .what-can-do {
         background: url(../pic/section2-bg.png)  no-repeat center center;
@@ -361,15 +358,19 @@ header {
         height: 442px;
         width: 30%;
         text-align: center;
+
         img {
             width: 92px;
             height: 98px;
             margin-top: 60px;
         }
-        .text {
+        .text, a{
             line-height: 1.6;
             margin-top: 48px;
             color: #eee;
+        }
+        a {
+            text-decoration: underline;
         }
         &:hover {
             box-shadow: 0 0 8px #000;
@@ -481,21 +482,21 @@ footer {
     }
 }
 .md-button{
-  line-height: 40px;
-  height: 40px;
-  width: 120px;
-  color:#ffffff;
-  background-color:@green;
-  font-size:16px;
-  font-weight:normal;
-  font-family:Arial;
-  border:0px solid @green;
-  box-shadow: inset 0px 0px 0px 0px #ffffff;
-  text-align:center;
-  display:inline-block;
-  text-decoration:none;
-  cursor: pointer;
-}
-.md-button:hover{
-  background-color:#1c9439;
+    line-height: 40px;
+    height: 40px;
+    width: 120px;
+    color:#ffffff;
+    background-color:@green;
+    font-size:16px;
+    font-weight:normal;
+    font-family:Arial;
+    border:0px solid @green;
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+    text-align:center;
+    display:inline-block;
+    text-decoration:none;
+    cursor: pointer;
+    &:hover {
+        background-color:#1c9439;
+    }
 }
