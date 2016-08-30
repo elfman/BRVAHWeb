@@ -41,15 +41,15 @@ $(document).ready(function() {
       $('#changeLanguage .triangle').addClass('reverse');
     }
   });
-
-  addMask($('.what-can-do'));
-  addMask($('#contentAbout'));
+  $('#introduce').click(smoothScroll);
+  $('#about').click(smoothScroll);
 });
 
-function addMask(item) {
-  var width = item.width();
-  var height = item.height();
-  $('<div class="mask"></div>').width(width).height(height).prependTo(item);
+function smoothScroll() {
+    $('body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
 }
 
 function changeText(lang) {
