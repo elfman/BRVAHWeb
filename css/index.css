@@ -14,7 +14,7 @@ p {
   margin: 0;
 }
 a {
-  color: #000000;
+  color: inherit;
   text-decoration: none;
 }
 .no-ie {
@@ -122,6 +122,9 @@ header .content ul.tab li.active a {
 .section-1 .content .part {
   font-size: 16px;
   margin: 32px 0;
+}
+.section-1 .content .part a {
+  text-decoration: underline;
 }
 .section-2 .top-layer {
   background-color: #1ebf60;
