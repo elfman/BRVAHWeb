@@ -68,6 +68,10 @@ header .content #changeLanguage .triangle {
   position: relative;
   left: 8px;
 }
+header .content #changeLanguage:hover,
+header .content #changeLanguage.open {
+  background-color: #181818;
+}
 header .content #changeLanguage span {
   margin-left: 15px;
   font-size: 15px;
@@ -86,12 +90,19 @@ header .content ul.tab li {
   text-align: center;
   width: 110px;
   height: 100%;
+  cursor: pointer;
 }
 header .content ul.tab li a {
   color: #818181;
+  width: 100%;
+  line-height: 86px;
+  display: inline-block;
 }
 header .content ul.tab li.active a {
   color: #ffffff;
+}
+header .content ul.tab li:hover {
+  background-color: #111;
 }
 .section-1 {
   background: url(../pic/section1-bg.png) no-repeat center center;
@@ -107,21 +118,39 @@ header .content ul.tab li.active a {
   color: #aaa;
   font-weight: lighter;
   padding-top: 90px;
+  font-family: "Microsoft YaHei", sans-serif;
 }
 .section-1 .content span {
   color: #fff;
 }
+.section-1 .content .gradient {
+  color: transparent;
+  background: -webkit-linear-gradient(left, #38dca1, #279995);
+  background: -moz-linear-gradient(left, #38dca1, #279995);
+  background: linear-gradient(to right, #38dca1, #279995);
+  -webkit-background-clip: text;
+  display: inline-block;
+}
 .section-1 .content .title {
-  font-size: 32px;
+  font-size: 14px;
+}
+.section-1 .content .title p {
   color: #ffffff;
 }
+.section-1 .content .title .gradient {
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: 1.8px;
+}
 .section-1 .content .subtitle {
-  font-size: 24px;
-  margin-top: 24px;
+  margin-top: 32px;
+}
+.section-1 .content .subtitle .gradient {
+  font-size: 20px;
 }
 .section-1 .content .part {
   font-size: 16px;
-  margin: 32px 0;
+  margin: 42px 0;
 }
 .section-1 .content .part a {
   text-decoration: underline;
