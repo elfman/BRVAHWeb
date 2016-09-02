@@ -115,10 +115,9 @@ header .content ul.tab li:hover {
 }
 .section-1 .content {
   margin: 0 auto;
-  color: #aaa;
+  color: #bbb;
   font-weight: lighter;
   padding-top: 90px;
-  font-family: "Microsoft YaHei", sans-serif;
 }
 .section-1 .content span {
   color: #fff;
@@ -132,15 +131,12 @@ header .content ul.tab li:hover {
   display: inline-block;
 }
 .section-1 .content .title {
-  font-size: 14px;
-}
-.section-1 .content .title p {
-  color: #ffffff;
+  font-size: 16px;
 }
 .section-1 .content .title .gradient {
   color: transparent;
-  font-size: 32px;
-  letter-spacing: 1.8px;
+  font-size: 42px;
+  letter-spacing: 2px;
 }
 .section-1 .content .subtitle {
   margin-top: 32px;
@@ -190,6 +186,9 @@ header .content ul.tab li:hover {
 .section-2 .introduce .title div {
   width: 120px;
   display: inline-block;
+}
+.section-2 .introduce .introduction-content {
+  height: 250px;
 }
 .section-2 .introduce #introductionTitle {
   color: #666;
@@ -279,6 +278,7 @@ header .content ul.tab li:hover {
 }
 .section-2 .honor .honor-star {
   background-color: #32d675;
+  left: 34%;
 }
 .section-2 .honor .honor-member {
   background-color: #fd9854;
@@ -436,7 +436,7 @@ footer #footer {
 }
 .row-three > div:nth-child(2),
 .row-three > a:nth-child(2) {
-  left: 34%;
+  left: 35%;
 }
 .downlist {
   margin: -1px 0 0 0;
